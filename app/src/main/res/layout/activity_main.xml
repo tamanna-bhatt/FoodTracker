@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.diksha.foodtracker.MainActivity"
+    android:background="@drawable/food_bg">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="#D9ffffff"/>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:paddingLeft="42dp"
+        android:paddingRight="42dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:background="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp">
+
+        <customfonts.Medium_Textview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FOOD "
+            android:textSize="22dp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            />
+
+        <customfonts.Medium_Textview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TRACKER"
+            android:textSize="22dp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/colorAccent"
+            android:layout_gravity="center"
+
+
+            />
+
+    </LinearLayout>
+
+
+    <GridView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"
+        android:layout_below="@+id/ll"
+        android:layout_marginTop="22dp"
+        android:horizontalSpacing="8dp"
+        android:verticalSpacing="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+      ></GridView>
+
+
+</RelativeLayout>

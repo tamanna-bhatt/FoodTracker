@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+ >
+
+    
+    <LinearLayout
+        android:id="@+id/llDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent"
+        android:orientation="vertical"
+        android:layout_marginTop="12dp"
+        android:visibility="gone"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llDateAndtype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#4D4cae4e"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="12dp"
+ android:paddingLeft="16dp"
+
+
+        >
+
+
+
+
+
+        <customfonts.Medium_Textview
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textColor="@color/text_color"
+            android:text="hjkjlkjlj"
+            android:layout_marginLeft="10dp"
+            android:textAllCaps="true"
+
+            />
+
+        <customfonts.TextView_Regular
+            android:id="@+id/tvDateTime"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textColor="@color/text_color"
+            android:text="hjkjlkjlj"
+            android:padding="12dp"
+
+            android:drawableLeft="@android:drawable/ic_lock_idle_alarm"
+            android:drawablePadding="6dp"
+            android:layout_marginRight="6dp"
+
+            android:drawableTint="@color/text_color"
+            />
+
+        </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="2dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+      >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/meal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="4dp"
+
+            />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingBottom="12dp"
+        android:paddingRight="12dp">
+
+
+
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+  >
+
+
+    <customfonts.Regular_Textview
+        android:id="@+id/tvMenuName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:textColor="@color/colorAccent"
+        android:text="sfsfsfasff"
+      />
+
+
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp">
+
+            <customfonts.Regular_Textview
+                android:id="@+id/tvFat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:textColor="@color/medium_text"
+                android:text="hjkjlkjlj"
+              />
+
+            <customfonts.Regular_Textview
+                android:id="@+id/tvProtien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:textColor="@color/medium_text"
+                android:text="hjkjlkjlj"
+                android:layout_marginTop="8dp"/>
+
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1.4"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp">
+
+            <customfonts.Regular_Textview
+                android:id="@+id/tvCarbohydrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:textColor="@color/medium_text"
+                android:text="sfsfsfasff"/>
+
+            <customfonts.Regular_Textview
+                android:id="@+id/tvCalories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:textColor="@color/medium_text"
+                android:text="hjkjlkjlj"
+                android:layout_marginTop="8dp"/>
+
+
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/llDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_menu_delete"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        android:background="@color/light_grey"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:visibility="gone">
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

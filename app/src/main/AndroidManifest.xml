@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.diksha.foodtracker">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.diksha.foodtracker.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.diksha.foodtracker.LoginActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.example.diksha.foodtracker.CreateAccountActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.example.diksha.foodtracker.AddRecordActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.example.diksha.foodtracker.AllRecordsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.example.diksha.foodtracker.AddFoodTypeActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.example.diksha.foodtracker.DeleteRecordActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.example.diksha.foodtracker.UpdateRecordActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.example.diksha.foodtracker.UpdateProfileActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.example.diksha.foodtracker.ShareHistoryActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.example.diksha.foodtracker.UpdateFoodTypeActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.example.diksha.foodtracker.UpdateFodTypeActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.example.diksha.foodtracker.MainActivity"
+            android:screenOrientation="portrait"/>
+
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.diksha.foodtracker"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+
+
+    </application>
+
+</manifest>

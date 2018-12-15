@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/activity_login"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+
+>
+
+
+
+
+    <include layout="@layout/toolbar"/>
+
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+        android:layout_marginTop="22dp">
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:padding="16dp">
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp">
+
+
+
+            <customfonts.Regular_Textview
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                                          android:layout_marginLeft="8dp"
+                                          android:text="Food Type : "
+                                          android:textColor="@color/medium_text"
+                                          android:textSize="15dp"/>
+            
+
+
+            <AutoCompleteTextView
+                android:id="@+id/etTypeName"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text=""
+                android:background="@drawable/round_button"
+                android:textSize="14dp"
+                android:layout_marginTop="8dp">
+
+                <requestFocus />
+            </AutoCompleteTextView>
+
+            </LinearLayout>
+
+
+
+
+
+            <customfonts.Regular_Textview
+                android:id="@+id/add"
+                android:layout_width="match_parent"
+                                          android:layout_height="wrap_content"
+                                          android:layout_gravity="center"
+                                          android:layout_marginTop="32dp"
+                                          android:background="@drawable/round_button_orange"
+                                          android:gravity="center"
+                                          android:padding="14dp"
+                                          android:text="ADD TYPE"
+                                          android:textColor="@color/white"
+                                          android:textSize="14dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+            />
+
+
+            <customfonts.Regular_Textview
+                android:id="@+id/show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/light_grey"
+                android:gravity="center"
+                android:padding="14dp"
+                android:text="Edit or Delete Type"
+                android:layout_marginTop="22dp"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/text_color"
+                android:textSize="14dp"
+                android:visibility="gone"
+
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
